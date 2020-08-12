@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "update"
   spec.version       = Update::VERSION
   spec.authors       = ["Jeremy Caldwell"]
-  spec.email         = ["jeremy@eternalistic.net"]
+  spec.email         = ["jeremy@eternalistic.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
   spec.description   = %q{TODO: Write a longer description. Optional.}
   spec.homepage      = ""
