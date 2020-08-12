@@ -1,0 +1,12 @@
+        <nav id="secondary" role="navigation">
+          <ul class="menu">
+            <li>
+              <a href="#" id="projects">Projects</a>
+              <ul class="menu projects-menu">
+                {% for project in site.data.projects %}
+                  <li><a href="/projects/{{ project.path }}">{{ project.name }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+          </ul>
+        </nav><!-- /nav -->

@@ -1,0 +1,64 @@
+name: Jeremy Caldwell
+author: Jeremy Caldwell
+description: 'Eternalistic'
+url: http://www.eternalistic.net
+
+# Editor
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+exclude: [
+  'node_modules',
+  'bower_components',
+  'Gruntfile.js',
+  'package.json',
+  'bower.json',
+  'Gemfile',
+  'Gemfile.lock',
+  'README.md',
+  'sass',
+  'coffee',
+  'env',
+  'tmp',
+  'inspiration.txt',
+  'script.js',
+  'production.js'
+]
+
+# GitHub Overrides
+safe: false
+lsi: false
+
+# Disqus
+disqus:
+  shortname: 'eternalisticblog'
+
+# Post
+# post:
+#  extension: md
+# paginate: 5
+# root: /
+# permalink: /:year/:month/:title/
+
+# Prose
+prose:
+  siteurl: "http://eternalistic.github.io"
+  media: "images"
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
+      - name: "layout"
+        field:
+          label: "Layout"
+          element: "text"
+          value: "post"
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
+          value: "A awesome Headline!"

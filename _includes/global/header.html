@@ -1,0 +1,48 @@
+    <header id="header" role="banner">
+
+      <div id="header-top">
+        <div id="header-info">
+          <a href="/" title="Home" rel="home" id="logo">
+            <img src="/images/logo.svg" alt="Eternalistic" />
+          </a>
+        </div>
+        <a id="nav-toggle" href="#page-top"><span></span></a>
+      </div><!-- /#header-top -->
+
+      <div class="menu-blocks">
+        <p><strong>Jeremy Caldwell</strong><br/>
+          Freelance front-end developer and Drupal themer.</p>
+
+        <hr />
+          <a href="/contact" class="btn">Available for hire</a>
+        <hr />
+
+        <nav id="primary" role="navigation">
+          <ul class="menu">
+            <li><a href='/about'>About / Resume</a></li>
+            <li><a href='/contact'>Contact me</a></li>
+          </ul>
+        </nav><!-- /nav -->
+
+        <hr class="narrow" />
+
+        {% include menu/projects.html %}
+
+        <hr class="narrow" />
+
+        <nav id="social" role="navigation">
+          <ul class="menu">
+            <li class="first"><a href="http://drupal.org/user/72964" target="_blank" class="drupal" title="Drupal">Drupal</a></li>
+            <li><a href="http://github.com/eternalistic" target="_blank" class="github" title="GitHub">GitHub</a></li>
+            <li><a href="http://twitter.com/eternalistic" target="_blank" class="twitter" title="Twitter">Twitter</a></li>
+            <li class="last"><a href="http://www.linkedin.com/pub/jeremy-caldwell/5/76b/ab1" target="_blank" class="linkedin" title="LinkedIn">LinkedIn</a></li>
+          </ul>
+        </nav>
+
+        <hr class="narrow" />
+
+        <p class="powered">Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a> <br/>
+          Hosted on <a href="http://github.com" target="_blank">GitHub</a></p>
+
+      </div><!-- /.menu-blocks -->
+    </header>

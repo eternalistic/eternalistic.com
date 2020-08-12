@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html><!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <link rel="dns-prefetch" href="//use.typekit.net">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//disqus.com">
+  <link rel="dns-prefetch" href="//mediacdn.disqus.com">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ page.title }} | Eternalistic</title>
+  <meta name="description" content="Freelance front-end developer who specializes in Drupal theming, site development, and UX. Located in Spokane, Washington.">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cleartype" content="on">
+  <link href="/favicon.ico" rel="shortcut icon">
+  <link type="text/css" rel="stylesheet" href="/css/styles.css" media="all" />
+  <script type="text/javascript" src="//use.typekit.net/mpz8ika.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+
+<body id="page-{{ page.body_id }}" class="{{ page.body_section }}">
+
+  <div id="page">
+
+    {% include global/skip.html %}
+
+    {% include global/header.html %}
+
+    <section id="main">
+      <div id="content" role="main">
+        <a id="main-content"></a>
+        <article>
+          {{ content }}
+        </article>
+      </div><!-- /#content -->
+    </section><!-- /#main -->
+
+  </div><!-- /#page -->
+
+  {% include global/scripts.html %}
+
+</body>
+</html>

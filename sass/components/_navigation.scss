@@ -1,0 +1,213 @@
+//
+// Navigation
+//
+
+
+// Nav toggle
+#nav-toggle {
+	cursor: pointer;
+	display: block;
+	height: 25px;
+	padding: 10px 0;
+
+	@include grid-span(1, 4);
+
+	width: 25px;
+
+  @include breakpoint($bp-large) {
+  	display: none !important;
+  }
+
+	& span,
+	& span:before,
+	& span:after {
+		background: $gray-84;
+		border-radius: 1px;
+		content: '';
+		display: block;
+		height: 3px;
+		position: absolute;
+		width: 25px;
+
+	 	// @include single-transition(all, 100ms, ease-in-out);
+	}
+
+	& span:before {
+		top: -8px;
+	}
+
+	& span:after {
+		bottom: -8px;
+	}
+
+	&.active span {
+		background-color: transparent;
+
+		&:before,
+		&:after {
+			top: 0;
+		}
+
+		&:before {
+			@include rotate(45deg);
+		}
+		&:after {
+			@include rotate(-45deg);
+		}
+	}
+}
+
+
+// Menu blocks
+.menu-blocks {
+	display: none;
+  padding-top: em(20px);
+
+	@include breakpoint($bp-large) {
+		display: block !important;
+		padding-top: 0;
+	}
+}
+
+
+// Nav
+nav {
+
+	h2 {
+		@include font-size(14);
+		color: $gray-84;
+		font-weight: 100;
+	}
+
+	// List
+	ul.menu {
+		@extend %resetlist;
+		@include font-size(14);
+
+		ul.menu {
+			display: none;
+			font-size: 100%;
+			margin-left: em(15px);
+			position: relative;
+
+			// Expand project menu
+			body.project & {
+				display: block;
+			}
+
+			li {
+				&:before {
+					color: $gray-166;
+					content: "-";
+					margin-left: -12px;
+					margin-top: 3px;
+					position: absolute;
+				}
+
+				&:hover {
+					&:before {
+						color: #ff5d52;
+					}
+				}
+			}
+		}
+	}
+
+	// List items
+	li {
+		line-height: 125%;
+	}
+
+	// Links
+	a,
+	a:visited {
+		color: $gray-166;
+		display: block;
+		padding: em(5px) 0;
+		text-decoration: none;
+
+	  &:hover,
+	  &:focus,
+	  &:active {
+	  	color: $gray-84;
+	  }
+	}
+
+	// Projects
+	#projects {
+		color: $gray-166;
+
+		&:after {
+			content: " +";
+		}
+
+		&:hover {
+			&:after {
+				color: #ff5d52;
+			}
+		}
+
+		&.active {
+			&:after {
+				color: #ff5d52;
+				content: " -";
+			}
+		}
+	}
+}
+
+
+// Navigation - Primary
+#primary {
+}
+
+
+// Navigation - Secondary
+#secondary {
+}
+
+
+// Social
+#social {
+	@extend %clearfix;
+
+	a,
+	a:visited {
+		display: block;
+		float: left;
+		height: 20px;
+		margin-right: em(20px);
+		padding: 0;
+		width: 20px;
+
+		@extend %imgrep;
+
+		@include opacity(.25);
+
+		&:hover,
+	 	&:focus,
+	 	&:active {
+			@include opacity(1);
+		}
+	}
+
+	// Drupal
+	a.drupal {
+		background: url(../images/social/drupal-over.png) no-repeat 0 0;
+	}
+
+	// Github
+	a.github {
+		background: url(../images/social/github-over.png) no-repeat 0 0;
+	}
+
+	// Twitter
+	a.twitter {
+		background: url(../images/social/twitter-over.png) no-repeat 0 0;
+	}
+
+	// LinkedIn
+	a.linkedin {
+		background: url(../images/social/linkedin-over.png) no-repeat 0 0;
+	}
+}

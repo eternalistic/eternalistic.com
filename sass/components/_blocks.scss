@@ -1,0 +1,109 @@
+//
+// Blocks
+//
+
+// Block
+.block {
+  margin-bottom: em(25px);
+}
+
+// Block title
+h2.block-title {
+  @include font-size(24);
+  color: $gray-50;
+	margin-bottom: em(15px);
+
+  @include breakpoint($bp-xlarge) {
+  	color: $gray-100;
+  }
+}
+
+// Affiliations
+ul.affiliations {
+	li {
+		margin-right: em(20px);
+	}
+}
+
+// Featured work.
+ul.featuredwork {
+  @include inline-block-list;
+
+  li {
+		margin-bottom: em(10px);
+
+		@include breakpoint($bp-xsmall) {
+	    @include grid-span(1, 1, 2, 0, 'float');
+		}
+
+		// Links.
+		a:link,
+    a:visited {
+			display: block;
+
+			@include box-shadow(none);
+
+			@include breakpoint($bp-xsmall) {
+		    padding-left: em(5px);
+		    padding-right: em(5px);
+		  }
+
+      // Hover.
+      // Focus.
+      // Active.
+		  &:hover,
+		  &:focus,
+		  &:active {
+		  	background: transparent;
+		  }
+		}
+
+    // First.
+    &:nth-child(1n+1) {
+    	a:link,
+      a:visited {
+	    	@include breakpoint($bp-xsmall) {
+	      	padding-left: 0;
+	      	padding-right: em(5px);
+	    	}
+    	}
+    }
+
+    // Last.
+    &:nth-child(2n+2) {
+    	a:link,
+      a:visited {
+	    	@include breakpoint($bp-xsmall) {
+	      	padding-left: em(5px);
+	      	padding-right: 0;
+	    	}
+    	}
+    }
+  }
+
+	// Image.
+  img {
+  	display: block;
+  	width: 100%;
+  }
+}
+
+// Embed container.
+.embed-container {
+  @extend %shadow;
+  height: 550px;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  iframe,
+  object,
+  embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

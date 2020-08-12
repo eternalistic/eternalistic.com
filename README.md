@@ -1,2 +1,0 @@
-# eternalistic.com
-Portfolio site

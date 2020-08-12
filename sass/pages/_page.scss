@@ -1,0 +1,130 @@
+//
+// Page
+//
+
+
+// HTML
+html {
+  background: $bg;
+  color: #444;
+  font-family: $font-body;
+  font-weight: 400;
+}
+
+// HTML + Body
+html,
+body {
+  height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+// Page
+#page {
+  height: 100%;
+}
+
+// Header
+#header {
+  background: $white;
+  border-bottom: 1px solid $gray-223;
+  left: 0;
+  padding: em(20px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  @extend %clearfix;
+
+  @include box-shadow(rgba($black, .125) 0 0 4px);
+
+  @include breakpoint($bp-large) {
+    border-bottom: none;
+    border-right: 1px solid $gray-223;
+    height: 100%;
+    overflow-y: auto;
+    padding: em(40px);
+    width: 250px;
+  }
+
+  // Expanded
+  &.expanded {
+    position: relative;
+    margin-bottom: - em(80px);
+  }
+
+  p {
+    @include font-size(13);
+
+    // Powered
+    &.powered {
+      a,
+      a:link {
+        &:hover,
+        &:focus,
+        &:active {
+          color: inherit;
+        }
+      }
+    }
+  }
+}
+
+
+// Header top
+#header-top {
+  @extend %clearfix;
+}
+
+
+// Header info
+#header-info {
+  position: relative;
+
+  @include grid-span(3, 1);
+
+  @include breakpoint($bp-large) {
+    margin-bottom: em(20px);
+    width: 100%;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+
+// Logo
+#logo {
+  display: block;
+  margin-top: em(3px);
+
+  img {
+    display: block;
+    margin-top: 0;
+    width: 120px;
+  }
+}
+
+
+// Main
+#main {
+  color: $gray-84;
+  padding: em(100px) em(20px) em(20px) em(20px);
+
+  @include breakpoint($bp-large) {
+    height: 100%;
+    margin-left: 250px;
+    padding: em(40px);
+  }
+}
+
+
+// Content
+#content {
+  @include breakpoint($bp-large) {
+    max-width: 800px;
+    padding-bottom: em(40px);
+  }
+}
