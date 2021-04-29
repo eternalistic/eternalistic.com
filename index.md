@@ -11,14 +11,14 @@ published: true
 
 <h2>Most Recent Projects</h2>
 <ul>
+  <li><a href="https://www.hitmanpro.com">Sophos Hitman Pro</a></li>
+  <li><a href="https://community.norton.com">Norton Community</a></li>
   <li><a href="https://www.officecheck.in">OfficeCheck.in</a></li>
   <li><a href="https://www.stanleyblackanddecker.com/who-we-are/2019-year-review">Stanley Black & Decker 2019 Year in Review</a></li>
   <li><a href="https://www.barefootwine.ca">Barefoot Wine Canada</a></li>
-  <li><a href="https://www.symantec.com/connect">Symantec Connect</a></li>
-  <li><a href="https://www.symantec.com/blogs">Symantec Blogs</a></li>
-  <li><a href="https://www.symantec.com/podcasts">Symantec Podcasts</a></li>
-  <li><a href="https://home.dartmouth.edu">Dartmouth</a></li>
+  <li><a href="https://www.symantec.com/blogs">Symantec Enterprise Blogs</a></li>
   <li><a href="https://www.irest.org">Integrative Restoration (iRest)</a></li>
+  <li><a href="https://home.dartmouth.edu">Dartmouth</a></li>
 </ul>
 
 I enjoy working on complex projects that allow me to think outside of the box and provide solutions and workflows which improve the usability of the site for both admins and users alike. If you have a similar project I'd [love to hear from you](/contact).
