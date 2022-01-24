@@ -12,6 +12,7 @@ published: true
 <h2>Most Recent Projects</h2>
 <ul>
   <li><a href="https://oursharedfuture.si.edu">Smithsonian - Our Shared Future: Reckoning With Our Racial Past</a></li>
+  <li><a href="https://www.sophos.com">Sophos</a></li>
   <li><a href="https://truetolife.com">Olympus - True to Life</a></li>
   <li><a href="https://www.hitmanpro.com">Sophos Hitman Pro</a></li>
   <li><a href="https://community.norton.com">Norton Community</a></li>
