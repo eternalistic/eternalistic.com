@@ -8,7 +8,7 @@ published: true
 
 <h1>Jeremy Caldwell</h1>
 
-<p class="intro">I'm a freelance front-end developer who specializes in Drupal theming, site development, and UX. Located in Spokane, WA.</p>
+<p class="intro">I'm a freelance front-end developer who specializes in Drupal theming, site development, and UX. Located in Sutherlin, Oregon.</p>
 
 <p class="intro">I've been working with Drupal since version 4.7 (2006) and have been designing and developing for the web since 1998. My experience in design helps bring a different approach to development and accounts for user experience along the way. This ensures the project is easy to use and allows for future development and makes for a better project all around.</p>
 
@@ -33,7 +33,7 @@ published: true
 
 <h2>President</h2>
 
-Eternalistic Inc., Spokane, Washington  <br/>
+Eternalistic Inc., Sutherlin, Oregon  <br/>
 March 2003 - Present
 
 As President of Eternalistic Inc. I am responsible for all aspects of the business. From discovery, design, development, and delivery. I am there every step of the way and stand behind my work.
@@ -59,7 +59,7 @@ I primarily receive new projects through word of mouth and referrals from previo
 
 <h3>Clients:</h3>
 
-Symantec, Dell, Syfy, Linux Foundation, Annenberg Foundation, O'Reilly, University of Washington, and University of Chicago
+Apple, Symantec, Dell, Syfy, Darmouth College, Linux Foundation, Annenberg Foundation, O'Reilly, University of Washington, and University of Chicago
 
 ---
 
@@ -91,6 +91,7 @@ Aside from development I am also responsible for helping lead a team of web deve
 * [Yoke's Fresh Market](http://yokesfreshmarkets.com)
 * [Digital Turbine](http://dev-archived-digital-turbine.pantheon.io)
 * Crowdswell
+* Netflix Partner Marketing
 
 ---
 
