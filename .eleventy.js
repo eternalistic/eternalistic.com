@@ -50,6 +50,7 @@ module.exports = function(eleventyConfig) {
 
   // Passthrough copies.
   [
+    'src/_redirects',
     'src/_headers',
     'src/robots.txt',
     'src/js/',

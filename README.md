@@ -17,7 +17,7 @@ Runs `eleventy --serve`. Format and lint with your editor on save, or `npm run f
 ```
 npm run build
 ```
-Output goes to `_site/`. Netlify builds from `netlify.toml` (`npm run build`, publish `_site`, Node 22); headers live in `src/_headers`. The bare domain redirects to `www` via Netlify domain settings.
+Output goes to `_site/`. Netlify builds from `netlify.toml` (`npm run build`, publish `_site`, Node 22); headers live in `src/_headers`, and `src/_redirects` sends the old `eternalistic.com` domains to the primary domain, `www.eternalistic.net`.
 
 The contact form uses Netlify Forms (`data-netlify="true"`, honeypot `bot-field`) and posts to `/contact/success/`. Submissions show up under **Forms** in the Netlify dashboard once form detection is enabled for the site.
 

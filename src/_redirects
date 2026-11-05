@@ -1,0 +1,6 @@
+# Old .com domains go to the primary domain (www.eternalistic.net).
+# The bare eternalistic.net is redirected by Netlify's domain settings.
+http://eternalistic.com/*      https://www.eternalistic.net/:splat  301!
+https://eternalistic.com/*     https://www.eternalistic.net/:splat  301!
+http://www.eternalistic.com/*  https://www.eternalistic.net/:splat  301!
+https://www.eternalistic.com/* https://www.eternalistic.net/:splat  301!
