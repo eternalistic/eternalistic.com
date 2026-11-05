@@ -1,4 +1,4 @@
-Sitemap: https://eternalistic.com/sitemap.xml
+Sitemap: https://www.eternalistic.com/sitemap.xml
 
 User-agent: *
 Disallow: /contact/success/
