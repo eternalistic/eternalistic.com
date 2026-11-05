@@ -1,0 +1,15 @@
+/* =============================================================================
+   PROSE (Markdown page content)
+   ========================================================================== */
+
+.prose {
+  & img {
+    width: 100%;
+    border: 1px solid var(--color-line);
+    box-shadow: var(--shadow-soft);
+  }
+
+  & cite {
+    display: block;
+  }
+}

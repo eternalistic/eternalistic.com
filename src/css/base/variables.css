@@ -1,0 +1,64 @@
+/* =============================================================================
+   DESIGN TOKENS
+   The only place raw colors, font stacks and sizes are allowed (enforced by
+   stylelint). Everything else uses var(--token).
+   ========================================================================== */
+
+:root {
+  /* Color: neutrals */
+  --color-white: #fff;
+  --color-page: #f6f5f1; /* main content background */
+  --color-surface: #fff; /* sidebar */
+  --color-text: #444;
+  --color-text-main: #545351; /* content text, 7:1 */
+  --color-heading-sub: #697171; /* h3, 4.5:1 on page */
+  --color-nav: #6e7777; /* sidebar links, 4.5:1 on white */
+  --color-nav-hover: #545351;
+  --color-label: #677675; /* form labels and text, 4.5:1 on input */
+  --color-input-text-focus: #435b5c;
+  --color-input-bg: #fafafc;
+  --color-input-border: #8a8a8e; /* 3:1 against the field and the page */
+  --color-line: #dfe3e3;
+  --color-quote-line: #ccc;
+  --color-skip-link: #666;
+
+  /* Color: accent (links, buttons, selection). Text on an accent background
+     uses --color-on-accent. */
+  --color-accent: #ff5d52;
+  --color-on-accent: #222; /* 5.3:1 on accent (link hover, selection) */
+
+  /* Color: shadows and rules */
+  --color-shadow: rgba(0, 0, 0, 0.125);
+  --color-rule-dark: rgba(0, 0, 0, 0.05);
+  --color-rule-light: rgba(255, 255, 255, 0.5);
+
+  /* Font families (Adobe Fonts kit, loaded in layout.html) */
+  --font-sans: proxima-nova, 'Helvetica Neue', arial, sans-serif;
+  --font-display: freight-text-pro, georgia, 'Times New Roman', serif;
+  --font-mono: ui-monospace, 'SF Mono', menlo, monospace;
+
+  /* Font sizes */
+  --font-size-12: 0.75rem;
+  --font-size-13: 0.8125rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+  --font-size-30: 1.875rem;
+  --font-size-34: 2.125rem;
+
+  /* Font weights */
+  --font-weight-thin: 100;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Shared effects */
+  --shadow-soft: var(--color-shadow) 0 0 0.25rem;
+  --ring-accent: 0 0 0 0.125rem var(--color-accent);
+
+  /* Layout */
+  --sidebar-width: 15.625rem;
+  --content-width: 50rem;
+}

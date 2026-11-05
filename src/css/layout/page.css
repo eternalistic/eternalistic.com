@@ -1,0 +1,44 @@
+/* =============================================================================
+   PAGE (main column beside the fixed sidebar)
+   ========================================================================== */
+
+.main {
+  padding: 6.25em 1.25em 1.25em;
+  color: var(--color-text-main);
+
+  @media (--viewport-large) {
+    margin-left: var(--sidebar-width);
+    padding: 2.5em;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  /* Links in the content: dark text with a coral underline (coral text
+     would only be 2.8:1 on the page). Coral block on hover and focus. */
+  & a:not(.button, .featured__link) {
+    color: var(--color-text-main);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 0.125em;
+    text-underline-offset: 0.2em;
+  }
+
+  /* Coral block on hover and keyboard focus */
+  & a:not(.button, .featured__link):hover,
+  & a:not(.button, .featured__link):focus-visible {
+    border-radius: 2px;
+    background-color: var(--color-accent);
+    color: var(--color-on-accent);
+    box-shadow: var(--ring-accent);
+    outline: 0;
+  }
+}
+
+.content {
+  @media (--viewport-large) {
+    max-width: var(--content-width);
+    padding-bottom: 2.5em;
+  }
+}

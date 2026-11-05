@@ -1,0 +1,20 @@
+/* =============================================================================
+   TESTIMONIAL (quote and attribution)
+   ========================================================================== */
+
+.testimonial {
+  margin: 0 0 1em 1.25em;
+  padding-left: 1.25em;
+  border-left: 0.1875rem solid var(--color-quote-line);
+
+  &__quote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  &__cite {
+    display: block;
+    font-style: italic;
+  }
+}

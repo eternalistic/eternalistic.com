@@ -1,0 +1,59 @@
+/* =============================================================================
+   NAV TOGGLE (hamburger on phones and tablets; script.js un-hides it)
+   ========================================================================== */
+
+.nav-toggle {
+  position: relative;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+
+  @media (--viewport-large) {
+    display: none;
+  }
+
+  &__icon,
+  &__icon::before,
+  &__icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 1.5625rem;
+    height: 0.1875rem;
+    border-radius: 1px;
+    background: var(--color-text-main);
+  }
+
+  &__icon {
+    top: 50%;
+    margin-top: -0.09375em;
+  }
+
+  &__icon::before {
+    top: -0.5rem;
+  }
+
+  &__icon::after {
+    top: 0.5rem;
+  }
+
+  &[aria-expanded='true'] &__icon {
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      top: 0;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}

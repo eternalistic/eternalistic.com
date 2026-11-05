@@ -1,0 +1,57 @@
+/* =============================================================================
+   FORM (contact form with labels inside the fields)
+   ========================================================================== */
+
+.form {
+  &__item {
+    position: relative;
+    margin-bottom: 1em;
+  }
+
+  /* Sits over the field; fades on focus, hides once there's text. */
+  &__label {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    padding-right: 1em;
+    color: var(--color-label);
+    white-space: nowrap;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+  }
+
+  &__item:focus-within &__label {
+    opacity: 0.5;
+  }
+
+  &__item:has(.form__input:not(:placeholder-shown)) &__label {
+    opacity: 0;
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 15.625rem;
+    padding: 0.9375em;
+    border: 1px solid var(--color-input-border);
+    border-radius: 5px;
+    background: var(--color-input-bg);
+    color: var(--color-label);
+    vertical-align: middle;
+    appearance: none;
+    transition: background 0.15s ease-in-out;
+
+    &:focus {
+      border-color: var(--color-label);
+      color: var(--color-input-text-focus);
+      outline: 0.125rem solid var(--color-input-text-focus);
+      outline-offset: 1px;
+    }
+
+    &--textarea {
+      max-width: none;
+      overflow: auto;
+      vertical-align: top;
+      resize: vertical;
+    }
+  }
+}

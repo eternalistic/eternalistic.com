@@ -1,14 +1,38 @@
 {
-  "name": "html-starter",
-  "version": "0.1.0",
+  "name": "eternalistic",
+  "version": "1.0.0",
+  "description": "Eleventy site for Eternalistic (Jeremy Caldwell).",
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "format:css": "prettier --write \"src/css/**/*.css\"",
+    "format:js": "prettier --write \"src/js/**/*.js\"",
+    "format": "npm run format:css && npm run format:js",
+    "lint:css": "prettier --check \"src/css/**/*.css\" && stylelint \"src/css/**/*.css\"",
+    "lint:js": "prettier --check \"src/js/**/*.js\" && eslint src/js",
+    "lint": "npm run lint:css && npm run lint:js"
+  },
+  "license": "ISC",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.3.2",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-sass": "~0.7.1",
-    "grunt-contrib-compass": "~0.7.1",
-    "grunt-imageoptim": "~1.4.1",
-    "grunt-jekyll": "~0.4.1"
+    "@11ty/eleventy": "^3.1.5",
+    "@eslint/js": "^10.0.1",
+    "autoprefixer": "^10.5.0",
+    "cssnano": "^8.0.1",
+    "eslint": "^10.8.0",
+    "globals": "^17.7.0",
+    "postcss": "^8.5.15",
+    "postcss-custom-media": "^12.0.1",
+    "postcss-import": "^16.1.1",
+    "postcss-nested": "^7.0.2",
+    "prettier": "^3.9.6",
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard": "^40.0.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-img": "^6.0.4"
+  },
+  "allowScripts": {
+    "sharp@0.33.5": true
   }
 }

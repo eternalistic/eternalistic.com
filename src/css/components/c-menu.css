@@ -1,0 +1,66 @@
+/* =============================================================================
+   MENU (sidebar navigation and the Projects disclosure)
+   ========================================================================== */
+
+.menu {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-14);
+  line-height: 1.25;
+  list-style: none;
+
+  &__link,
+  &__toggle {
+    display: block;
+    padding: 0.3125em 0;
+    color: var(--color-nav);
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible,
+    &[aria-current] {
+      color: var(--color-nav-hover);
+    }
+  }
+
+  /* Projects: native <details>, open on project pages */
+  &__toggle {
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::after {
+      content: ' +';
+    }
+
+    &:hover::after,
+    [open] > &::after {
+      color: var(--color-accent);
+    }
+
+    [open] > &::after {
+      content: ' -';
+    }
+  }
+
+  /* Sub-menu, dash bullets */
+  &--sub {
+    position: relative;
+    margin-left: 0.9375em;
+    font-size: 100%;
+
+    & li::before {
+      content: '-';
+      position: absolute;
+      margin: 0.1875em 0 0 -0.75em;
+      color: var(--color-nav);
+    }
+
+    & li:hover::before {
+      color: var(--color-accent);
+    }
+  }
+}

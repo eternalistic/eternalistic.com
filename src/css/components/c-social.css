@@ -1,0 +1,21 @@
+/* =============================================================================
+   SOCIAL (icon links in the sidebar)
+   ========================================================================== */
+
+.social {
+  display: flex;
+  gap: 1.25em;
+  margin: 0 0 1em;
+  padding: 0;
+  list-style: none;
+
+  &__link {
+    display: block;
+    opacity: 0.5; /* black artwork shows as #808080, 3.9:1 on white */
+
+    &:hover,
+    &:focus-visible {
+      opacity: 1;
+    }
+  }
+}

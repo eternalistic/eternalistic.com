@@ -1,0 +1,12 @@
+/* =============================================================================
+   BREAKPOINTS (mobile first)
+   ========================================================================== */
+
+/* 550px: two-up featured work, three-up toolkit */
+@custom-media --viewport-small (min-width: 34.375em);
+
+/* 880px: larger page titles */
+@custom-media --viewport-medium (min-width: 55em);
+
+/* 1000px: fixed sidebar header */
+@custom-media --viewport-large (min-width: 62.5em);

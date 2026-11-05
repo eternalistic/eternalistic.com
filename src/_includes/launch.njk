@@ -1,0 +1,2 @@
+{#- "Launched" line on a project page. Front matter: launched, dateLabel, siteUrl, siteLabel. -#}
+<p class="launch"><span><strong>{{ dateLabel or "Launched" }}:</strong> {{ launched }}</span>{% if siteUrl %} <a href="{{ siteUrl }}" class="button">{{ siteLabel or "View site" }}</a>{% endif %}</p>

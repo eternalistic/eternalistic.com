@@ -1,7 +1,4 @@
-assets
-.sass-cache
-# _drafts/
-/node_modules
-.DS_Store
-debug
 _site/
+node_modules
+.DS_Store
+/.claude/settings.local.json

@@ -1,0 +1,16 @@
+{
+  "name": "Eternalistic",
+  "author": "Jeremy Caldwell",
+  "url": "https://eternalistic.com",
+  "description": "Freelance front-end developer who specializes in Drupal theming, site development, and UX. Located in Sutherlin, Oregon.",
+  "city": "Sutherlin",
+  "region": "OR",
+  "language": "en_US",
+  "typekit": "mpz8ika",
+  "social": [
+    { "name": "Drupal", "url": "https://www.drupal.org/user/72964", "icon": "drupal-over.png", "width": 18, "height": 20 },
+    { "name": "GitHub", "url": "https://github.com/eternalistic", "icon": "github-over.png", "width": 20, "height": 20 },
+    { "name": "Twitter", "url": "https://twitter.com/eternalistic", "icon": "twitter-over.png", "width": 20, "height": 20 },
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/pub/jeremy-caldwell/5/76b/ab1", "icon": "linkedin-over.png", "width": 20, "height": 19 }
+  ]
+}

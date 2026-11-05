@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <meta name="robots" content="{% if noindex %}noindex, nofollow{% else %}index, follow{% endif %}" />
+    <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:site_name" content="{{ site.name }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}" />
+    <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:locale" content="{{ site.language }}">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/{{ site.typekit }}.css">
+    <link rel="stylesheet" media="all" href="/css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ site.author }}",
+        "description": "{{ site.description }}",
+        "url": "{{ site.url }}/",
+        "jobTitle": "Front-end developer",
+        "worksFor": { "@type": "Organization", "name": "Eternalistic Inc." },
+        "sameAs": [{% for link in site.social %}"{{ link.url }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "{{ site.city }}",
+          "addressRegion": "{{ site.region }}",
+          "addressCountry": "US"
+        }
+      }
+    </script>
+    <script src="/js/script.js" defer></script>
+  </head>
+  <body>
+    <a href="#main-content" class="visually-hidden skip-link">Skip to content</a>
+    <header class="header">
+      <div class="header__top">
+        <a href="/" rel="home" class="logo"{% if page.url == '/' %} aria-current="page"{% endif %}>
+          <img src="/images/logo.svg" alt="{{ site.name }}" class="logo__image" width="120" height="16" />
+        </a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="header-menu" hidden>
+          <span class="nav-toggle__icon"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+      </div>
+
+      <div class="header__menu" id="header-menu">
+        <p class="header__text"><strong>{{ site.author }}</strong><br>
+          Freelance front-end developer and Drupal themer.</p>
+
+        <hr>
+        <a href="/contact/" class="button">Available for hire</a>
+        <hr>
+
+        <nav aria-label="Main">
+          <ul class="menu">
+            <li><a href="/about/" class="menu__link"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About / Resume</a></li>
+            <li><a href="/contact/" class="menu__link"{% if page.url == '/contact/' %} aria-current="page"{% endif %}>Contact me</a></li>
+          </ul>
+        </nav>
+
+        <hr class="rule--narrow">
+
+        <nav aria-label="Projects">
+          <details{% if section == 'project' %} open{% endif %}>
+            <summary class="menu__toggle">Projects</summary>
+            <ul class="menu menu--sub">
+              {%- for project in projects %}
+              {%- assign projectUrl = '/projects/' | append: project.path | append: '/' %}
+              <li><a href="{{ projectUrl }}" class="menu__link"{% if page.url == projectUrl %} aria-current="page"{% endif %}>{{ project.name }}</a></li>
+              {%- endfor %}
+            </ul>
+          </details>
+        </nav>
+
+        <hr class="rule--narrow">
+
+        <ul class="social">
+          {%- for link in site.social %}
+          <li><a href="{{ link.url }}" class="social__link"><img src="/images/social/{{ link.icon }}" alt="{{ link.name }}" width="{{ link.width }}" height="{{ link.height }}"></a></li>
+          {%- endfor %}
+        </ul>
+
+        <hr class="rule--narrow">
+
+        <p class="header__text">Built with <a href="https://www.11ty.dev">Eleventy</a><br>
+          Hosted on <a href="https://www.netlify.com">Netlify</a></p>
+      </div>
+    </header>
+
+    <main id="main-content" class="main" tabindex="-1">
+      <article class="content prose">
+        {{ content }}
+      </article>
+    </main>
+  </body>
+</html>
