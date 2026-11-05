@@ -19,6 +19,8 @@ npm run build
 ```
 Output goes to `_site/`. Pushing to `master` deploys: Netlify builds from `netlify.toml` (`npm run build`, publish `_site`, Node 22). Headers live in `src/_headers`.
 
+The contact form uses Netlify Forms (`data-netlify="true"`, honeypot `bot-field`) and posts to `/contact/success/`. Submissions show up under **Forms** in the Netlify dashboard once form detection is enabled for the site.
+
 ## Domains
 The site lives at **https://www.eternalistic.net**. Every other domain redirects there with a 301, keeping the path (e.g. `eternalistic.com/about/` → `www.eternalistic.net/about/`).
 
@@ -33,8 +35,6 @@ The site lives at **https://www.eternalistic.net**. Every other domain redirects
 - `site.url` in `src/_data/site.json` (canonical and Open Graph URLs, sitemap) and the `Sitemap:` line in `src/robots.txt` must match the primary domain.
 - DNS for both domains is at Porkbun: the bare domain has an `A` record to `104.198.14.52` (Netlify's load balancer), and `www` points to `eternalistic.netlify.app` (`ALIAS` or `CNAME`).
 - HTTPS is a Let's Encrypt certificate managed by Netlify (Domain management → HTTPS). It must list all four domains; after adding or removing a domain, select **Renew certificate**.
-
-The contact form uses Netlify Forms (`data-netlify="true"`, honeypot `bot-field`) and posts to `/contact/success/`. Submissions show up under **Forms** in the Netlify dashboard once form detection is enabled for the site.
 
 ## Structure
 - `src/_includes/layout.html` – the only layout: `<head>`, sidebar header (menu, Projects disclosure, social links), JSON-LD
