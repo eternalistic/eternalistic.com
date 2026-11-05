@@ -1,6 +1,7 @@
 ---
 layout: layout.html
 title: Get in touch
+metaTitle: "Hire a Drupal Front-End Developer"
 description: "Have a Drupal theming or front-end project? Get in touch with Jeremy Caldwell, a freelance developer in Sutherlin, Oregon, about your next site."
 ---
 

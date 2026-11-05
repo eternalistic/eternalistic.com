@@ -1,6 +1,7 @@
 ---
 layout: layout.html
 title: About
+metaTitle: "About Jeremy Caldwell, Drupal Developer"
 description: "Jeremy Caldwell is a freelance front-end developer who specializes in Drupal theming, site development, and UX. Located in Sutherlin, Oregon."
 ---
 
