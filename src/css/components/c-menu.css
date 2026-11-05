@@ -16,10 +16,13 @@
     color: var(--color-nav);
     text-decoration: none;
 
-    &:hover,
-    &:focus-visible,
     &[aria-current] {
       color: var(--color-nav-hover);
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-link);
     }
   }
 
