@@ -16,7 +16,6 @@ I'm a consultant and front-end developer who specializes in Drupal theming and s
 * [Olympus - True to Life](https://truetolife.com)
 * [Sophos Hitman Pro](https://www.hitmanpro.com)
 * [Norton Community](https://community.norton.com)
-* [Stanley Black & Decker 2019 Year in Review](https://www.stanleyblackanddecker.com/who-we-are/2019-year-review)
 * [Barefoot Wine Canada](https://www.barefootwine.ca)
 * [Symantec Enterprise Blogs](https://www.symantec.com/blogs)
 * [Integrative Restoration (iRest)](https://www.irest.org)
