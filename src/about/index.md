@@ -13,50 +13,7 @@ description: "Jeremy Caldwell is a freelance front-end developer who specializes
 <p class="intro">I stay current on new technologies and strive to incorporate new development tools and best practices into my workflow and share what I've learned with others.</p>
 
 **Associations:**\
-[Acquia Silver Partner](http://www.acquia.com/partners/showcase/eternalistic-designs), [Drupal Association Individual Member](http://association.drupal.org), [Drupal.org contributor](http://drupal.org/user/72964), [Build Guild](http://spokane.buildguild.org).
-
----
-
-<div class="toolkit">
-<section class="toolkit__group">
-<h2>Frameworks</h2>
-<ul class="toolkit__list">
-<li><a href="https://gruntjs.com">Grunt</a></li>
-<li><a href="https://gulpjs.com">Gulp</a></li>
-<li><a href="https://sass-lang.com">Sass</a></li>
-<li><a href="https://jquery.com">jQuery</a></li>
-</ul>
-</section>
-<section class="toolkit__group">
-<h2>Tools</h2>
-<ul class="toolkit__list">
-<li><a href="https://git-scm.com">Git</a>
-<ul>
-<li><a href="https://beanstalkapp.com">Beanstalk</a></li>
-<li><a href="https://bitbucket.org">BitBucket</a></li>
-<li><a href="https://github.com">GitHub</a></li>
-</ul>
-</li>
-<li><a href="https://iterm2.com">iTerm2</a></li>
-<li><a href="https://www.mamp.info">MAMP</a></li>
-<li><a href="https://www.adobe.com/products/photoshop.html">Photoshop</a></li>
-<li><a href="https://www.sequelpro.com">Sequel Pro</a></li>
-<li><a href="https://www.sublimetext.com">Sublime Text</a></li>
-</ul>
-</section>
-<section class="toolkit__group">
-<h2>Other</h2>
-<ul class="toolkit__list">
-<li><a href="https://drupal.org">Drupal</a>
-<ul>
-<li><a href="https://github.com/drush-ops/drush">Drush</a></li>
-<li><a href="https://github.com/eternalistic/zen_subtheme">Zen Subtheme</a></li>
-</ul>
-</li>
-<li><a href="https://github.com/eternalistic/html-starter">HTML Starter</a></li>
-</ul>
-</section>
-</div>
+[Acquia Silver Partner](http://www.acquia.com/partners/showcase/eternalistic-designs), [Drupal Association Individual Member](http://association.drupal.org), [Drupal.org contributor](http://drupal.org/user/72964).
 
 ---
 

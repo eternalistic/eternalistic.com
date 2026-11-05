@@ -1,6 +1,6 @@
 ---
 layout: layout.html
-title: Consultant and front-end developer who specializes in Drupal
+title: Jeremy Caldwell, Drupal Front-End Developer
 ---
 
 # Hi, I'm Jeremy Caldwell.

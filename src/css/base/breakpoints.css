@@ -2,7 +2,7 @@
    BREAKPOINTS (mobile first)
    ========================================================================== */
 
-/* 550px: two-up featured work, three-up toolkit */
+/* 550px: two-up featured work */
 @custom-media --viewport-small (min-width: 34.375em);
 
 /* 880px: larger page titles */

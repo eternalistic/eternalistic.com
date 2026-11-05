@@ -1,5 +1,7 @@
 ---
 title: "Linux Foundation"
+metaTitle: "Linux Foundation Drupal Front-End Development"
+description: "Two years of Drupal front-end development for the Linux Foundation, including a custom base theme and support for 100+ Collaborative Project sites."
 dateLabel: "Worked with"
 launched: "September 2014 - August 2016"
 siteUrl: https://www.linuxfoundation.org
@@ -20,6 +22,10 @@ Here are a few sites where I was responsible for the entire build (site developm
 * [Code Aurora](https://www.codeaurora.org)
 * [Core Infrastructure Initiative](https://www.coreinfrastructure.org)
 * [Hyperledger Project](https://www.hyperledger.org)
+
+## About the project
+
+Over two years I owned front-end development for the Linux Foundation's Drupal sites. I built a custom base theme that new Collaborative Project sites could start from, set up Grunt and Gulp workflows, wrote custom modules and trained the team, while planning and coordinating front-end work across more than 100 project sites.
 
 ---
 

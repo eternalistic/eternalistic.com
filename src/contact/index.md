@@ -1,7 +1,7 @@
 ---
 layout: layout.html
 title: Get in touch
-description: "Have a project you'd like to collaborate on? Get in touch with Jeremy Caldwell."
+description: "Have a Drupal theming or front-end project? Get in touch with Jeremy Caldwell, a freelance developer in Sutherlin, Oregon, about your next site."
 ---
 
 # {{ title }}

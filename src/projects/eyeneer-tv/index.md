@@ -1,5 +1,7 @@
 ---
 title: "Eyeneer TV"
+metaTitle: "Eyeneer TV Drupal Site and Theme"
+description: "Drupal site for Eyeneer TV's vintage music video library, with ratings, comments, favorites and custom search, built by Jeremy Caldwell."
 launched: "August 2010"
 siteUrl: http://www.eyeneer.com
 ---
@@ -11,6 +13,10 @@ Eyeneer TV's mission is to help you find and enjoy the most amazing vintage musi
 I was responsible for taking the client's designs and building a full-featured website powered by [Drupal](http://drupal.org). Users have the ability to log in and comment on videos, rate them, and add or remove them from their personal list of favorites for easy viewing.
 
 Also features a custom search results page displaying the title, thumbnail, and description of the video to help the user easily find what they are looking for.
+
+## About the project
+
+Eyeneer TV is built around a large library of licensed music videos, so finding and saving videos had to be easy. I built the Drupal site and theme from the client's designs, including user accounts, comments, ratings, personal favorites lists and a custom search results page that shows each video's title, thumbnail and description.
 
 ---
 

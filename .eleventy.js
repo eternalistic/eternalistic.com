@@ -55,6 +55,7 @@ module.exports = function(eleventyConfig) {
     'src/robots.txt',
     'src/js/',
     'src/images/logo.svg',
+    'src/images/social-preview.jpg',
     'src/images/social/',
     {'src/images/favicon': '/'}
   ].forEach(path =>

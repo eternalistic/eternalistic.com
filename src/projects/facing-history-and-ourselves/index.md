@@ -1,5 +1,7 @@
 ---
 title: "Facing History and Ourselves"
+metaTitle: "Facing History Responsive Drupal Theme"
+description: "Responsive Drupal theme and design direction for Facing History and Ourselves, built with ThinkShout by freelance developer Jeremy Caldwell."
 launched: "March 2014"
 siteUrl: http://facinghistory.org
 ---
@@ -13,6 +15,10 @@ They handled building the Drupal site and working with the client get get exactl
 We had mockups to use for reference but they were unfinished and incomplete. I used them as direction for designing and building elements throughout the site and creating a look and feel that was consistent and filled in the gaps in the design as needed.
 
 Be sure to check out [ThinkShout's full case study](http://thinkshout.com/work/facing-history) on this project for more information.
+
+## About the project
+
+The site holds calendars, events, educator resources and member benefits. ThinkShout built the Drupal back end; I built the responsive theme in HTML and SASS, filled gaps in the unfinished mockups with consistent design, and gave design direction across those page types.
 
 ---
 
