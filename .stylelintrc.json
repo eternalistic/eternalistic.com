@@ -36,7 +36,7 @@
           "/^((-?var\\(--(space|hairline|sidebar)[a-z0-9-]*\\)|0|auto|-?[0-9.]+(em|%))\\s*)+$/"
         ],
         "font-family": [
-          "/^var\\(--font-(sans|display|mono)\\)$/",
+          "/^var\\(--font-(sans|display|mono|system)\\)$/",
           "inherit"
         ],
         "font-size": [

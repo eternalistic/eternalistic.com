@@ -8,5 +8,10 @@
 
   &__image {
     width: 7.5rem;
+
+    /* Artwork is dark grey or black; flip it on the dark scheme */
+    @media (prefers-color-scheme: dark) {
+      filter: invert(1);
+    }
   }
 }

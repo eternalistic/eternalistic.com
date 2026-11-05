@@ -5,27 +5,32 @@
    ========================================================================== */
 
 :root {
-  /* Color: neutrals */
+  /* Color: neutrals (warm palette from Business Finance Tracker) */
   --color-white: #fff;
-  --color-page: #f6f5f1; /* main content background */
+  --color-page: #f6f5f2; /* main content background */
   --color-surface: #fff; /* sidebar */
-  --color-text: #444;
-  --color-text-main: #545351; /* content text, 7:1 */
-  --color-heading-sub: #697171; /* h3, 4.5:1 on page */
-  --color-nav: #6e7777; /* sidebar links, 4.5:1 on white */
-  --color-nav-hover: #545351;
-  --color-label: #677675; /* form labels and text, 4.5:1 on input */
-  --color-input-text-focus: #435b5c;
-  --color-input-bg: #fafafc;
-  --color-input-border: #8a8a8e; /* 3:1 against the field and the page */
-  --color-line: #dfe3e3;
-  --color-quote-line: #ccc;
-  --color-skip-link: #666;
+  --color-text: #1d1d1b;
+  --color-text-main: #2a2724; /* content text, 13.6:1 */
+  --color-heading-sub: #66635d; /* h3, 5.5:1 on page */
+  --color-nav: #66635d; /* sidebar links, 6:1 on white */
+  --color-nav-hover: #1d1d1b;
+  --color-label: #66635d; /* form labels and text, 5.5:1 on input */
+  --color-input-text-focus: #1d1d1b;
+  --color-input-bg: #f7f6f4;
+  --color-input-border: #8a8680; /* 3.3:1 against the field and the page */
+  --color-line: #e6e3df;
+  --color-quote-line: #d2cec8;
+  --color-skip-link: #66635d;
 
-  /* Color: accent (links, buttons, selection). Text on an accent background
-     uses --color-on-accent. */
-  --color-accent: #ff5d52;
-  --color-on-accent: #222; /* 5.3:1 on accent (link hover, selection) */
+  /* Color: accent (buttons, focus rings, underlines, decorative marks).
+     Text on an accent background uses --color-on-accent. Accent fails 4.5:1
+     as text, so link text uses --color-link. */
+  --color-accent: #f2541b;
+  --color-on-accent: #1d1d1b; /* 4.9:1 on accent (buttons) */
+  --color-link: #b8410a; /* 5.1:1 on page, 5.5:1 on white */
+  --color-accent-strong: #b8410a; /* hover block behind white text, 5.5:1 */
+  --color-selection: #fdd3c1;
+
 
   /* Color: shadows and rules */
   --color-shadow: rgba(0, 0, 0, 0.125);
@@ -36,6 +41,7 @@
   --font-sans: proxima-nova, 'Helvetica Neue', arial, sans-serif;
   --font-display: freight-text-pro, georgia, 'Times New Roman', serif;
   --font-mono: ui-monospace, 'SF Mono', menlo, monospace;
+  --font-system: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, 'Helvetica Neue', ubuntu, sans-serif;
 
   /* Font sizes */
   --font-size-12: 0.75rem;
@@ -52,6 +58,7 @@
   --font-weight-thin: 100;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
+  --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
   /* Shared effects */
@@ -61,4 +68,33 @@
   /* Layout */
   --sidebar-width: 15.625rem;
   --content-width: 50rem;
+}
+
+/* Dark scheme, follows the OS setting. Warm darks from the Business Finance
+   Tracker utility bar. Contrast ratios are against the dark page (#1f1e1b)
+   or sidebar (#2a2724). */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --color-page: #1f1e1b;
+    --color-surface: #2a2724;
+    --color-text: #e9e6df;
+    --color-text-main: #e9e6df; /* 13.4:1 on page */
+    --color-heading-sub: #a9a59c; /* 6.8:1 on page */
+    --color-nav: #cfcbc2; /* 9.2:1 on sidebar */
+    --color-nav-hover: #fff;
+    --color-label: #a9a59c; /* 6:1 on input */
+    --color-input-text-focus: #fff;
+    --color-input-bg: #2a2724;
+    --color-input-border: #7d796f; /* 3.4:1 against the field and the page */
+    --color-line: #47443d;
+    --color-quote-line: #6b675e;
+    --color-skip-link: #47443d; /* white text on it, 9.7:1 */
+    --color-link: #ff7a45; /* 6.5:1 on page, 5.7:1 on sidebar */
+    --color-selection: #6b2a10; /* text on it, 8.6:1 */
+    --color-shadow: rgba(0, 0, 0, 0.5);
+    --color-rule-dark: rgba(0, 0, 0, 0.35);
+    --color-rule-light: rgba(255, 255, 255, 0.08);
+  }
 }

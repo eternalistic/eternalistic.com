@@ -15,8 +15,8 @@
     outline: 0;
   }
 
-  /* Links in the content: dark text with a coral underline (coral text
-     would only be 2.8:1 on the page). Coral block on hover and focus. */
+  /* Links in the content: dark text with an orange underline (orange text
+     would only be 3.2:1 on the page). Dark orange block on hover and focus. */
   & a:not(.button, .featured__link) {
     color: var(--color-text-main);
     text-decoration: underline;
@@ -25,13 +25,13 @@
     text-underline-offset: 0.2em;
   }
 
-  /* Coral block on hover and keyboard focus */
+  /* Dark orange block, white text, on hover and keyboard focus */
   & a:not(.button, .featured__link):hover,
   & a:not(.button, .featured__link):focus-visible {
     border-radius: 2px;
-    background-color: var(--color-accent);
-    color: var(--color-on-accent);
-    box-shadow: var(--ring-accent);
+    background-color: var(--color-accent-strong);
+    color: var(--color-white);
+    box-shadow: 0 0 0 0.125rem var(--color-accent-strong);
     outline: 0;
   }
 }

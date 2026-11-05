@@ -59,10 +59,11 @@
 
   &__text a {
     color: inherit;
+    text-decoration: underline;
   }
 
   &__text a:hover,
   &__text a:focus-visible {
-    color: var(--color-accent);
+    color: var(--color-link);
   }
 }

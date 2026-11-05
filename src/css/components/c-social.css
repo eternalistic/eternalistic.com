@@ -18,4 +18,10 @@
       opacity: 1;
     }
   }
+
+  & img {
+    @media (prefers-color-scheme: dark) {
+      filter: invert(1);
+    }
+  }
 }

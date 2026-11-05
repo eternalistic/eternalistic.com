@@ -40,14 +40,14 @@ textarea {
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--color-link);
   text-decoration: none;
   transition: all 0.15s ease;
 }
 
 ::selection {
-  background: var(--color-accent);
-  color: var(--color-on-accent);
+  background: var(--color-selection);
+  color: var(--color-text);
 }
 
 [hidden] {
